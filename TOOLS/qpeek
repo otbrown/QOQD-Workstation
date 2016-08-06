@@ -28,7 +28,9 @@ declare -r SPOOL=/var/spool/torque/spool/
 declare -r HOST=eps.hw.ac.uk
 declare -r EXT=OU
 declare -r JOB_REGEX=[0-9]\{1,\}-\{0,1\}[0-9]\{0,3\}\.hart
+declare -r NUM_LINES_REGEX=-[ht][0-9]\{1,\}
 declare TOOL=tail
+declare LINE_OPT = ""
 
 # subfunctions
 _help () {
@@ -38,6 +40,10 @@ _help () {
 
 build_path () {
     FNAME=${SPOOL}${1}.${HOST}.${EXT}
+}
+
+get_num_lines () {
+    LINE_OPT="-n {$1:2}"
 }
 
 # MAIN
@@ -66,12 +72,18 @@ elif [ $# -eq 2 ]; then
     	-c)
     		TOOL=cat
     		;;
-    	-h)
+    	-h*)
     		TOOL=head
+            if [[ $1 =~ NUM_LINES_REGEX ]]; then
+                get_num_lines $1
+            fi
     		;;
-    	-t)
+    	-t*)
     		TOOL=tail
-    		;;
+            if [[ $1 =~ NUM_LINES_REGEX ]]; then
+                get_num_lines $1
+            fi
+            ;;
     	*)
     		echo "Unknown option -- see usage with qpeek --help."
     		exit -1
@@ -95,6 +107,6 @@ elif [ ! -r $FNAME ]; then
 fi
 
 # tool meet fname
-$TOOL $FNAME
+$TOOL $LINE_OPT $FNAME
 
 exit 0
