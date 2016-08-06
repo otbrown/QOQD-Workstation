@@ -1,0 +1,13 @@
+
+hart.eps.hw.ac.uk: 
+                                                                                  Req'd       Req'd       Elap
+Job ID                  Username    Queue    Jobname          SessID  NDS   TSK   Memory      Time    S   Time
+----------------------- ----------- -------- ---------------- ------ ----- ------ --------- --------- - ---------
+48.hart.eps.hw.ac.uk    ob25        long     JSCAN_las7.5      55552     1      8       --  504:00:00 R 281:07:32
+49.hart.eps.hw.ac.uk    ob25        long     JSCAN_las8.0     132818     1      8       --  504:00:00 R 136:17:00
+89.hart.eps.hw.ac.uk    mjh32       long     sweep            121944     1      4       --   99:01:00 R  03:58:08
+90[].hart.eps.hw.ac.uk  eo13        long     frustration         --      1      4       --   25:00:00 R  25:00:00
+92[].hart.eps.hw.ac.uk  eo13        long     frustration         --      1      4       --   25:00:00 R  25:00:00
+93.hart.eps.hw.ac.uk    eo13        long     frustration      130497     1      4       --   25:00:00 R  00:12:40
+95.hart.eps.hw.ac.uk    eo13        priority frustration         --      1      8       --   25:00:00 Q       -- 
+97.hart.eps.hw.ac.uk    eo13        short    frustration         --      1      8       --   02:00:00 Q       -- 

@@ -1,0 +1,539 @@
+Job Id: 48.hart.eps.hw.ac.uk
+    Job_Name = JSCAN_las7.5
+    Job_Owner = ob25@hart.eps.hw.ac.uk
+    resources_used.cput = 1866:57:34
+    resources_used.energy_used = 0
+    resources_used.mem = 5898548kb
+    resources_used.vmem = 10628644kb
+    resources_used.walltime = 287:26:54
+    job_state = R
+    queue = long
+    server = hart.eps.hw.ac.uk
+    Checkpoint = u
+    ctime = Wed Jul 20 19:13:37 2016
+    Error_Path = hart.eps.hw.ac.uk:/home/ob25/code/DMRG-MJH/DMRG-Ollie/JSCAN_l
+	as7.5.e48
+    exec_host = hart.eps.hw.ac.uk/8-15
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = abe
+    Mail_Users = ob25@hw.ac.uk
+    mtime = Wed Jul 20 19:13:38 2016
+    Output_Path = hart.eps.hw.ac.uk:/home/ob25/code/DMRG-MJH/DMRG-Ollie/JSCAN_
+	las7.5.o48
+    Priority = 0
+    qtime = Wed Jul 20 19:13:37 2016
+    Rerunable = True
+    Resource_List.ncpus = 4
+    Resource_List.neednodes = 1:ppn=8
+    Resource_List.nodect = 1
+    Resource_List.nodes = 1:ppn=8
+    Resource_List.walltime = 504:00:00
+    session_id = 55552
+    Shell_Path_List = /bin/sh
+    substate = 42
+    Variable_List = PBS_O_QUEUE=long,PBS_O_HOME=/home/ob25,PBS_O_LOGNAME=ob25,
+	PBS_O_PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/s
+	bin:/usr/sbin:/home/ob25/.local/bin:/home/ob25/bin,
+	PBS_O_MAIL=/var/spool/mail/ob25,PBS_O_SHELL=/bin/bash,
+	PBS_O_LANG=en_GB.UTF-8,
+	PBS_O_WORKDIR=/home/ob25/code/DMRG-MJH/DMRG-Ollie,
+	PBS_O_HOST=hart.eps.hw.ac.uk,PBS_O_SERVER=hart.eps.hw.ac.uk,
+	XDG_SESSION_ID=11996,HOSTNAME=hart.eps.hw.ac.uk,
+	SELINUX_ROLE_REQUESTED=,TERM=xterm,SHELL=/bin/bash,HISTSIZE=1000,
+	SSH_CLIENT=80.6.114.72 50678 22,SELINUX_USE_CURRENT_RANGE=,
+	QTDIR=/usr/lib64/qt-3.3,QTINC=/usr/lib64/qt-3.3/include,
+	SSH_TTY=/dev/pts/1,QT_GRAPHICSSYSTEM_CHECKED=1,USER=ob25,
+	LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=
+	40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=3
+	0;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc
+	=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.l
+	zma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:
+	*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo
+	=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz
+	=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.s
+	ar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:
+	*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35
+	:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;
+	35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz
+	=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.
+	m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35
+	:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;
+	35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=0
+	1;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=0
+	1;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac
+	=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.
+	mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*
+	.oga=01;36:*.spx=01;36:*.xspf=01;36:,MAIL=/var/spool/mail/ob25,
+	PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/u
+	sr/sbin:/home/ob25/.local/bin:/home/ob25/bin,
+	PWD=/home/ob25/code/DMRG-MJH/DMRG-Ollie,LANG=en_GB.UTF-8,KDEDIRS=/usr,
+	SELINUX_LEVEL_REQUESTED=,HISTCONTROL=ignoredups,SHLVL=1,
+	HOME=/home/ob25,LOGNAME=ob25,QTLIB=/usr/lib64/qt-3.3/lib,
+	SSH_CONNECTION=80.6.114.72 50678 137.195.30.20 22,
+	LESSOPEN=||/usr/bin/lesspipe.sh %s,XDG_RUNTIME_DIR=/run/user/1001,
+	QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins,
+	_=/usr/local/bin/qsub,OLDPWD=/home/ob25/code/DMRG-MJH
+    euser = ob25
+    egroup = ob25
+    hashname = 48.hart.eps.hw.ac.uk
+    queue_rank = 47
+    queue_type = E
+    comment = Job started on Wed Jul 20 at 19:13
+    etime = Wed Jul 20 19:13:37 2016
+    submit_args = jobSub.sh
+    start_time = Wed Jul 20 19:13:38 2016
+    Walltime.Remaining = 779514
+    start_count = 1
+    fault_tolerant = False
+    job_radix = 0
+    submit_host = hart.eps.hw.ac.uk
+    request_version = 1
+
+Job Id: 49.hart.eps.hw.ac.uk
+    Job_Name = JSCAN_las8.0
+    Job_Owner = ob25@hart.eps.hw.ac.uk
+    resources_used.cput = 927:31:21
+    resources_used.energy_used = 0
+    resources_used.mem = 5520252kb
+    resources_used.vmem = 10202256kb
+    resources_used.walltime = 142:36:22
+    job_state = R
+    queue = long
+    server = hart.eps.hw.ac.uk
+    Checkpoint = u
+    ctime = Tue Jul 26 20:04:09 2016
+    Error_Path = hart.eps.hw.ac.uk:/home/ob25/code/DMRG-MJH/DMRG-Ollie/JSCAN_l
+	as8.0.e49
+    exec_host = hart.eps.hw.ac.uk/0-7
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = abe
+    Mail_Users = ob25@hw.ac.uk
+    mtime = Tue Jul 26 20:04:10 2016
+    Output_Path = hart.eps.hw.ac.uk:/home/ob25/code/DMRG-MJH/DMRG-Ollie/JSCAN_
+	las8.0.o49
+    Priority = 0
+    qtime = Tue Jul 26 20:04:09 2016
+    Rerunable = True
+    Resource_List.ncpus = 4
+    Resource_List.neednodes = 1:ppn=8
+    Resource_List.nodect = 1
+    Resource_List.nodes = 1:ppn=8
+    Resource_List.walltime = 504:00:00
+    session_id = 132818
+    Shell_Path_List = /bin/sh
+    substate = 42
+    Variable_List = PBS_O_QUEUE=long,PBS_O_HOME=/home/ob25,PBS_O_LOGNAME=ob25,
+	PBS_O_PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/s
+	bin:/usr/sbin:/home/ob25/.local/bin:/home/ob25/bin,
+	PBS_O_MAIL=/var/spool/mail/ob25,PBS_O_SHELL=/bin/bash,
+	PBS_O_LANG=en_GB.UTF-8,
+	PBS_O_WORKDIR=/home/ob25/code/DMRG-MJH/DMRG-Ollie,
+	PBS_O_HOST=hart.eps.hw.ac.uk,PBS_O_SERVER=hart.eps.hw.ac.uk,
+	XDG_SESSION_ID=13017,HOSTNAME=hart.eps.hw.ac.uk,
+	SELINUX_ROLE_REQUESTED=,TERM=xterm,SHELL=/bin/bash,HISTSIZE=1000,
+	SSH_CLIENT=80.6.114.72 49766 22,SELINUX_USE_CURRENT_RANGE=,
+	QTDIR=/usr/lib64/qt-3.3,QTINC=/usr/lib64/qt-3.3/include,
+	SSH_TTY=/dev/pts/0,QT_GRAPHICSSYSTEM_CHECKED=1,USER=ob25,
+	LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=
+	40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=3
+	0;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc
+	=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.l
+	zma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:
+	*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo
+	=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz
+	=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.s
+	ar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:
+	*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35
+	:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;
+	35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz
+	=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.
+	m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35
+	:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;
+	35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=0
+	1;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=0
+	1;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac
+	=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.
+	mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*
+	.oga=01;36:*.spx=01;36:*.xspf=01;36:,MAIL=/var/spool/mail/ob25,
+	PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/u
+	sr/sbin:/home/ob25/.local/bin:/home/ob25/bin,
+	PWD=/home/ob25/code/DMRG-MJH/DMRG-Ollie,LANG=en_GB.UTF-8,KDEDIRS=/usr,
+	SELINUX_LEVEL_REQUESTED=,HISTCONTROL=ignoredups,SHLVL=1,
+	HOME=/home/ob25,LOGNAME=ob25,QTLIB=/usr/lib64/qt-3.3/lib,
+	SSH_CONNECTION=80.6.114.72 49766 137.195.30.20 22,
+	LESSOPEN=||/usr/bin/lesspipe.sh %s,XDG_RUNTIME_DIR=/run/user/1001,
+	QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins,
+	_=/usr/local/bin/qsub,OLDPWD=/home/ob25/code/DMRG-MJH
+    euser = ob25
+    egroup = ob25
+    hashname = 49.hart.eps.hw.ac.uk
+    queue_rank = 48
+    queue_type = E
+    comment = Job started on Tue Jul 26 at 20:04
+    etime = Tue Jul 26 20:04:09 2016
+    submit_args = jobSub.sh
+    start_time = Tue Jul 26 20:04:10 2016
+    Walltime.Remaining = 1300946
+    start_count = 1
+    fault_tolerant = False
+    job_radix = 0
+    submit_host = hart.eps.hw.ac.uk
+    request_version = 1
+
+Job Id: 89.hart.eps.hw.ac.uk
+    Job_Name = sweep
+    Job_Owner = mjh32@hart.eps.hw.ac.uk
+    resources_used.cput = 16:39:00
+    resources_used.energy_used = 0
+    resources_used.mem = 417652kb
+    resources_used.vmem = 4046468kb
+    resources_used.walltime = 10:17:30
+    job_state = R
+    queue = long
+    server = hart.eps.hw.ac.uk
+    Checkpoint = u
+    ctime = Mon Aug  1 08:23:02 2016
+    Error_Path = hart.eps.hw.ac.uk:/home/mjh32/Projects/Sameti/sweep.e89
+    exec_host = hart.eps.hw.ac.uk/16-19
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = abe
+    Mail_Users = m.j.hartmann@hw.ac.uk
+    mtime = Mon Aug  1 08:23:02 2016
+    Output_Path = hart.eps.hw.ac.uk:/home/mjh32/Projects/Sameti/sweep.o89
+    Priority = 0
+    qtime = Mon Aug  1 08:23:02 2016
+    Rerunable = True
+    Resource_List.ncpus = 4
+    Resource_List.neednodes = 1:ppn=4
+    Resource_List.nodect = 1
+    Resource_List.nodes = 1:ppn=4
+    Resource_List.walltime = 99:01:00
+    session_id = 121944
+    Shell_Path_List = /bin/sh
+    substate = 42
+    Variable_List = PBS_O_QUEUE=long,PBS_O_HOME=/home/mjh32,
+	PBS_O_LOGNAME=mjh32,
+	PBS_O_PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/s
+	bin:/usr/sbin:/home/mjh32/.local/bin:/home/mjh32/bin,
+	PBS_O_MAIL=/var/spool/mail/mjh32,PBS_O_SHELL=/bin/bash,
+	PBS_O_LANG=en_GB.UTF-8,PBS_O_WORKDIR=/home/mjh32/Projects/Sameti,
+	PBS_O_HOST=hart.eps.hw.ac.uk,PBS_O_SERVER=hart.eps.hw.ac.uk,
+	XDG_SESSION_ID=13974,HOSTNAME=hart.eps.hw.ac.uk,
+	SELINUX_ROLE_REQUESTED=,TERM=xterm,SHELL=/bin/bash,HISTSIZE=1000,
+	SSH_CLIENT=87.168.119.214 57079 22,SELINUX_USE_CURRENT_RANGE=,
+	QTDIR=/usr/lib64/qt-3.3,QTINC=/usr/lib64/qt-3.3/include,
+	SSH_TTY=/dev/pts/0,QT_GRAPHICSSYSTEM_CHECKED=1,USER=mjh32,
+	LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=
+	40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=3
+	0;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc
+	=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.l
+	zma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:
+	*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo
+	=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz
+	=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.s
+	ar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:
+	*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35
+	:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;
+	35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz
+	=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.
+	m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35
+	:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;
+	35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=0
+	1;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=0
+	1;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac
+	=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.
+	mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*
+	.oga=01;36:*.spx=01;36:*.xspf=01;36:,MAIL=/var/spool/mail/mjh32,
+	PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/u
+	sr/sbin:/home/mjh32/.local/bin:/home/mjh32/bin,
+	PWD=/home/mjh32/Projects/Sameti,LANG=en_GB.UTF-8,KDEDIRS=/usr,
+	SELINUX_LEVEL_REQUESTED=,HISTCONTROL=ignoredups,SHLVL=1,
+	HOME=/home/mjh32,LOGNAME=mjh32,QTLIB=/usr/lib64/qt-3.3/lib,
+	SSH_CONNECTION=87.168.119.214 57079 137.195.30.20 22,
+	LESSOPEN=||/usr/bin/lesspipe.sh %s,XDG_RUNTIME_DIR=/run/user/1004,
+	QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins,
+	_=/usr/local/bin/qsub,OLDPWD=/home/mjh32
+    euser = mjh32
+    egroup = mjh32
+    hashname = 89.hart.eps.hw.ac.uk
+    queue_rank = 206
+    queue_type = E
+    comment = Job started on Mon Aug 01 at 08:23
+    etime = Mon Aug  1 08:23:02 2016
+    submit_args = jobSub.sh
+    start_time = Mon Aug  1 08:23:02 2016
+    Walltime.Remaining = 319338
+    start_count = 1
+    fault_tolerant = False
+    job_radix = 0
+    submit_host = hart.eps.hw.ac.uk
+    request_version = 1
+
+Job Id: 104.hart.eps.hw.ac.uk
+    Job_Name = sweep2
+    Job_Owner = mjh32@hart.eps.hw.ac.uk
+    resources_used.cput = 03:12:41
+    resources_used.energy_used = 0
+    resources_used.mem = 413692kb
+    resources_used.vmem = 3908336kb
+    resources_used.walltime = 01:58:57
+    job_state = R
+    queue = long
+    server = hart.eps.hw.ac.uk
+    Checkpoint = u
+    ctime = Mon Aug  1 16:36:43 2016
+    Error_Path = hart.eps.hw.ac.uk:/home/mjh32/Projects/Sameti/sweep2.e104
+    exec_host = hart.eps.hw.ac.uk/24-27
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = abe
+    Mail_Users = m.j.hartmann@hw.ac.uk
+    mtime = Mon Aug  1 16:41:35 2016
+    Output_Path = hart.eps.hw.ac.uk:/home/mjh32/Projects/Sameti/sweep2.o104
+    Priority = 0
+    qtime = Mon Aug  1 16:36:43 2016
+    Rerunable = True
+    Resource_List.ncpus = 4
+    Resource_List.neednodes = 1:ppn=4
+    Resource_List.nodect = 1
+    Resource_List.nodes = 1:ppn=4
+    Resource_List.walltime = 99:01:00
+    session_id = 145097
+    Shell_Path_List = /bin/sh
+    substate = 42
+    Variable_List = PBS_O_QUEUE=long,PBS_O_HOME=/home/mjh32,
+	PBS_O_LOGNAME=mjh32,
+	PBS_O_PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/s
+	bin:/usr/sbin:/home/mjh32/.local/bin:/home/mjh32/bin,
+	PBS_O_MAIL=/var/spool/mail/mjh32,PBS_O_SHELL=/bin/bash,
+	PBS_O_LANG=en_GB.UTF-8,PBS_O_WORKDIR=/home/mjh32/Projects/Sameti,
+	PBS_O_HOST=hart.eps.hw.ac.uk,PBS_O_SERVER=hart.eps.hw.ac.uk,
+	XDG_SESSION_ID=14057,HOSTNAME=hart.eps.hw.ac.uk,
+	SELINUX_ROLE_REQUESTED=,TERM=xterm,SHELL=/bin/bash,HISTSIZE=1000,
+	SSH_CLIENT=87.168.119.214 55579 22,SELINUX_USE_CURRENT_RANGE=,
+	QTDIR=/usr/lib64/qt-3.3,OLDPWD=/home/mjh32,
+	QTINC=/usr/lib64/qt-3.3/include,SSH_TTY=/dev/pts/0,
+	QT_GRAPHICSSYSTEM_CHECKED=1,USER=mjh32,
+	LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=
+	40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=3
+	0;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc
+	=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.l
+	zma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:
+	*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo
+	=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz
+	=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.s
+	ar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:
+	*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35
+	:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;
+	35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz
+	=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.
+	m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35
+	:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;
+	35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=0
+	1;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=0
+	1;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac
+	=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.
+	mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*
+	.oga=01;36:*.spx=01;36:*.xspf=01;36:,MAIL=/var/spool/mail/mjh32,
+	PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/u
+	sr/sbin:/home/mjh32/.local/bin:/home/mjh32/bin,
+	PWD=/home/mjh32/Projects/Sameti,LANG=en_GB.UTF-8,KDEDIRS=/usr,
+	SELINUX_LEVEL_REQUESTED=,HISTCONTROL=ignoredups,SHLVL=1,
+	HOME=/home/mjh32,LOGNAME=mjh32,QTLIB=/usr/lib64/qt-3.3/lib,
+	SSH_CONNECTION=87.168.119.214 55579 137.195.30.20 22,
+	LESSOPEN=||/usr/bin/lesspipe.sh %s,XDG_RUNTIME_DIR=/run/user/1004,
+	QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins,
+	_=/usr/local/bin/qsub
+    euser = mjh32
+    egroup = mjh32
+    hashname = 104.hart.eps.hw.ac.uk
+    queue_rank = 262
+    queue_type = E
+    comment = Job started on Mon Aug 01 at 16:41
+    etime = Mon Aug  1 16:36:43 2016
+    submit_args = jobSub2.sh
+    start_time = Mon Aug  1 16:41:35 2016
+    Walltime.Remaining = 349251
+    start_count = 1
+    fault_tolerant = False
+    job_radix = 0
+    submit_host = hart.eps.hw.ac.uk
+    request_version = 1
+
+Job Id: 106[].hart.eps.hw.ac.uk
+    Job_Name = frustration
+    Job_Owner = eo13@hart.eps.hw.ac.uk
+    job_state = Q
+    queue = long
+    server = hart.eps.hw.ac.uk
+    Checkpoint = u
+    ctime = Mon Aug  1 16:47:37 2016
+    Error_Path = hart.eps.hw.ac.uk:/home/eo13/frustration/frustration.e106
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    Mail_Users = e.owen@hw.ac.uk
+    mtime = Mon Aug  1 18:41:44 2016
+    Output_Path = hart.eps.hw.ac.uk:/home/eo13/frustration/frustration.o106
+    Priority = 0
+    Rerunable = True
+    Resource_List.ncpus = 4
+    Resource_List.neednodes = 1:ppn=4
+    Resource_List.nodect = 1
+    Resource_List.nodes = 1:ppn=4
+    Resource_List.walltime = 25:00:00
+    Shell_Path_List = /bin/sh
+    substate = 10
+    Variable_List = PBS_O_QUEUE=long,PBS_O_HOME=/home/eo13,PBS_O_LOGNAME=eo13,
+	PBS_O_PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/s
+	bin:/usr/sbin:/home/eo13/.local/bin:/home/eo13/bin,
+	PBS_O_MAIL=/var/spool/mail/eo13,PBS_O_SHELL=/bin/bash,
+	PBS_O_LANG=en_GB.UTF-8,PBS_O_WORKDIR=/home/eo13/frustration,
+	PBS_O_HOST=hart.eps.hw.ac.uk,PBS_O_SERVER=hart.eps.hw.ac.uk,
+	XDG_SESSION_ID=14013,HOSTNAME=hart.eps.hw.ac.uk,
+	SELINUX_ROLE_REQUESTED=,TERM=xterm-256color,SHELL=/bin/bash,
+	HISTSIZE=1000,SSH_CLIENT=137.195.53.5 57364 22,
+	SELINUX_USE_CURRENT_RANGE=,QTDIR=/usr/lib64/qt-3.3,
+	QTINC=/usr/lib64/qt-3.3/include,SSH_TTY=/dev/pts/2,
+	QT_GRAPHICSSYSTEM_CHECKED=1,USER=eo13,
+	LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=3
+	8;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38
+	;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=
+	48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;
+	5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.
+	taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=
+	38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:
+	*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5
+	;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.t
+	z=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;
+	5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*
+	.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg
+	=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm
+	=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tif
+	f=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.p
+	cx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.
+	mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*
+	.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*
+	.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*
+	.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.x
+	wd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.a
+	nx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.fl
+	ac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.
+	mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.o
+	ga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:,MAIL=/var/spool/mail/eo13,
+	PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/u
+	sr/sbin:/home/eo13/.local/bin:/home/eo13/bin,
+	PWD=/home/eo13/frustration,LANG=en_GB.UTF-8,KDEDIRS=/usr,
+	SELINUX_LEVEL_REQUESTED=,HISTCONTROL=ignoredups,SHLVL=1,
+	HOME=/home/eo13,LOGNAME=eo13,QTLIB=/usr/lib64/qt-3.3/lib,
+	SSH_CONNECTION=137.195.53.5 57364 137.195.30.20 22,
+	LESSOPEN=||/usr/bin/lesspipe.sh %s,XDG_RUNTIME_DIR=/run/user/1003,
+	QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins,
+	OLDPWD=/home/eo13/frustration/batch_longerchain,
+	_=/usr/local/bin/qsub
+    euser = eo13
+    egroup = eo13
+    queue_rank = 269
+    queue_type = E
+    etime = Mon Aug  1 16:47:37 2016
+    submit_args = jobSub.sh
+    job_array_request = 1-5
+    fault_tolerant = False
+    job_radix = 0
+    submit_host = hart.eps.hw.ac.uk
+    request_version = 1
+
+Job Id: 107[].hart.eps.hw.ac.uk
+    Job_Name = frustration
+    Job_Owner = eo13@hart.eps.hw.ac.uk
+    job_state = R
+    queue = long
+    server = hart.eps.hw.ac.uk
+    Checkpoint = u
+    ctime = Mon Aug  1 16:53:34 2016
+    Error_Path = hart.eps.hw.ac.uk:/home/eo13/frustration/batch_longerchain/fr
+	ustration.e107
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = a
+    Mail_Users = e.owen@hw.ac.uk
+    mtime = Mon Aug  1 18:41:44 2016
+    Output_Path = hart.eps.hw.ac.uk:/home/eo13/frustration/batch_longerchain/f
+	rustration.o107
+    Priority = 0
+    Rerunable = True
+    Resource_List.ncpus = 4
+    Resource_List.neednodes = 1:ppn=4
+    Resource_List.nodect = 1
+    Resource_List.nodes = 1:ppn=4
+    Resource_List.walltime = 25:00:00
+    Shell_Path_List = /bin/sh
+    substate = 10
+    Variable_List = PBS_O_QUEUE=long,PBS_O_HOME=/home/eo13,PBS_O_LOGNAME=eo13,
+	PBS_O_PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/s
+	bin:/usr/sbin:/home/eo13/.local/bin:/home/eo13/bin,
+	PBS_O_MAIL=/var/spool/mail/eo13,PBS_O_SHELL=/bin/bash,
+	PBS_O_LANG=en_GB.UTF-8,
+	PBS_O_WORKDIR=/home/eo13/frustration/batch_longerchain,
+	PBS_O_HOST=hart.eps.hw.ac.uk,PBS_O_SERVER=hart.eps.hw.ac.uk,
+	XDG_SESSION_ID=14013,HOSTNAME=hart.eps.hw.ac.uk,
+	SELINUX_ROLE_REQUESTED=,TERM=xterm-256color,SHELL=/bin/bash,
+	HISTSIZE=1000,SSH_CLIENT=137.195.53.5 57364 22,
+	SELINUX_USE_CURRENT_RANGE=,QTDIR=/usr/lib64/qt-3.3,
+	QTINC=/usr/lib64/qt-3.3/include,SSH_TTY=/dev/pts/2,
+	QT_GRAPHICSSYSTEM_CHECKED=1,USER=eo13,
+	LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=3
+	8;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38
+	;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=
+	48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;
+	5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.
+	taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=
+	38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:
+	*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5
+	;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.t
+	z=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;
+	5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*
+	.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg
+	=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm
+	=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tif
+	f=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.p
+	cx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.
+	mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*
+	.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*
+	.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*
+	.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.x
+	wd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.a
+	nx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.fl
+	ac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.
+	mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.o
+	ga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:,MAIL=/var/spool/mail/eo13,
+	PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/u
+	sr/sbin:/home/eo13/.local/bin:/home/eo13/bin,
+	PWD=/home/eo13/frustration/batch_longerchain,LANG=en_GB.UTF-8,
+	KDEDIRS=/usr,SELINUX_LEVEL_REQUESTED=,HISTCONTROL=ignoredups,SHLVL=1,
+	HOME=/home/eo13,LOGNAME=eo13,QTLIB=/usr/lib64/qt-3.3/lib,
+	SSH_CONNECTION=137.195.53.5 57364 137.195.30.20 22,
+	LESSOPEN=||/usr/bin/lesspipe.sh %s,XDG_RUNTIME_DIR=/run/user/1003,
+	QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins,
+	OLDPWD=/home/eo13/frustration,_=/usr/local/bin/qsub
+    euser = eo13
+    egroup = eo13
+    queue_rank = 275
+    queue_type = E
+    etime = Mon Aug  1 16:53:34 2016
+    submit_args = jobSub.sh
+    job_array_request = 1-5
+    fault_tolerant = False
+    job_radix = 0
+    submit_host = hart.eps.hw.ac.uk
+    request_version = 1
+
