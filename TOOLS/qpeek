@@ -15,6 +15,8 @@
 # task array the form is XXX-YY.hart, where YY is the task number.
 #
 # The tool option can be optionally omitted, in which case qpeek will use tail.
+# You can optionally supply the number of lines to head and tail in format
+# -{h|t}zz, where zz is the number of lines
 #
 # Options:
 #	-c		Use the cat tool - will return the entire outfile.
@@ -22,6 +24,16 @@
 #	-t		Use the tail tool - will return the last ten lines of the outfile.
 #
 # Use man TOOL to find more information on each tool.
+#
+# Example calls:
+#   qpeek 0.hart
+#       - returns the output of tail JOB_FILE
+#
+#   qpeek -c 0.hart > 0.peek
+#       - appends the output of cat JOB_FILE to 000.peek
+#
+#   qpeek -t20 0.hart
+#       - returns the last 20 lines of the JOB_FILE
 
 # variables
 declare -r SPOOL=/var/spool/torque/spool/
@@ -34,7 +46,7 @@ declare LINE_OPT=""
 
 # subfunctions
 _help () {
-    head -n20 $0 | tail -n18
+    head -n37 $0 | tail -n34
     exit 0
 }
 
