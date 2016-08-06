@@ -10,7 +10,11 @@
 # USAGE
 # qpeek -{c|h|t} job_ID
 #
-# You can find the job_ID for your job using qstat.
+# You can find the job_ID for your job using qstat. It should be of the form
+# XXX.hart where XXX is the number assigned to your job. If you are using a
+# task array the form is XXX-YY.hart, where YY is the task number.
+#
+# The tool option can be optionally omitted, in which case qpeek will use tail.
 #
 # Options:
 #	-c		Use the cat tool - will return the entire outfile.
