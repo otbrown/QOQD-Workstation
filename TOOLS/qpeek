@@ -30,7 +30,7 @@ declare -r EXT=OU
 declare -r JOB_REGEX=[0-9]\{1,\}-\{0,1\}[0-9]\{0,3\}\.hart
 declare -r NUM_LINES_REGEX=-[ht][0-9]\{1,\}
 declare TOOL=tail
-declare LINE_OPT = ""
+declare LINE_OPT=""
 
 # subfunctions
 _help () {
@@ -43,7 +43,7 @@ build_path () {
 }
 
 get_num_lines () {
-    LINE_OPT="-n {$1:2}"
+    LINE_OPT=-n${1:2}
 }
 
 # MAIN
@@ -74,13 +74,13 @@ elif [ $# -eq 2 ]; then
     		;;
     	-h*)
     		TOOL=head
-            if [[ $1 =~ NUM_LINES_REGEX ]]; then
+            if [[ $1 =~ $NUM_LINES_REGEX ]]; then
                 get_num_lines $1
             fi
     		;;
     	-t*)
     		TOOL=tail
-            if [[ $1 =~ NUM_LINES_REGEX ]]; then
+            if [[ $1 =~ $NUM_LINES_REGEX ]]; then
                 get_num_lines $1
             fi
             ;;
