@@ -48,7 +48,7 @@ elif [ $# -eq 0 ]; then
     exit -1
 elif [ $# -eq 1 ]; then
     # this is either a default call or a cry for help
-    if [[ $1 == --help -o $1 == -help ]]; then
+    if [[ $1 == --help || $1 == -help ]]; then
         _help
     elif [[ $1 =~ $JOB_REGEX ]]; then
         build_path $1
