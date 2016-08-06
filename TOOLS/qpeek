@@ -16,51 +16,81 @@
 #	-c		Use the cat tool - will return the entire outfile.
 #	-h		Use the head tool - will return the first ten lines of the outfile.
 #	-t		Use the tail tool - will return the last ten lines of the outfile.
-# 
+#
 # Use man TOOL to find more information on each tool.
 
-if [ $1 == --help -o $1 == -help ]
-	then
-		head -n20 $0 | tail -n18
-		exit 0
-fi
-
-# constants
+# variables
 declare -r SPOOL=/var/spool/torque/spool/
 declare -r HOST=eps.hw.ac.uk
 declare -r EXT=OU
+declare -r JOB_REGEX=[0-9]\{1,\}-\{0,1\}[0-9]\{0,3\}\.hart
+declare TOOL=tail
 
-# build absolute path to outfile
-FNAME=${SPOOL}${2}.${HOST}.${EXT}
+# subfunctions
+_help () {
+    head -n20 $0 | tail -n18
+    exit 0
+}
 
-# check that FNAME exists!
-if [ ! -f $FNAME ]
-	then
-		echo "Cannot resolve outfile, or it is not a file."
-		exit -1
-elif [ ! -r $FNAME ]
-	then 
-		echo "Outfile is not readable."
-		exit -1
+build_path () {
+    FNAME=${SPOOL}${1}.${HOST}.${EXT}
+}
+
+# MAIN
+# handle input arguments
+if [ $# -gt 2 ]; then
+    # this is an erroneous call
+    echo "Too many arguments! Please check usage with qpeek --help"
+    exit -1
+elif [ $# -eq 0 ]; then
+    # this is an erroneous call
+    echo "No job ID provided. Please check usage with qpeek --help"
+    exit -1
+elif [ $# -eq 1 ]; then
+    # this is either a default call or a cry for help
+    if [[ $1 == --help -o $1 == -help ]]; then
+        _help
+    elif [[ $1 =~ $JOB_REGEX ]]; then
+        build_path $1
+    else
+        echo "Invalid input. Please check usage with qpeek --help"
+        exit -1
+    fi
+elif [ $# -eq 2 ]; then
+    # check tool request
+    case $1 in
+    	-c)
+    		TOOL=cat
+    		;;
+    	-h)
+    		TOOL=head
+    		;;
+    	-t)
+    		TOOL=tail
+    		;;
+    	*)
+    		echo "Unknown option -- see usage with qpeek --help."
+    		exit -1
+    esac
+    # check job ID
+    if [[ $2 =~ $JOB_REGEX ]]; then
+        build_path $2
+    else
+        echo "Invalid job ID. See usage with qpeek --help"
+        exit -1
+    fi
 fi
 
-# select requested tool
-case $1 in
-	-c)
-		TOOL=cat
-		;;
-	-h)
-		TOOL=head
-		;;
-	-t)
-		TOOL=tail
-		;;
-	*)
-		echo "Unknown option -- see usage."
-		exit -1
-esac
+# final bit of error handling, check fname can be accessed
+if [ ! -f $FNAME ]; then
+	echo "Cannot resolve outfile, or it is not a file."
+	exit -1
+elif [ ! -r $FNAME ]; then
+	echo "Outfile is not readable."
+	exit -1
+fi
 
-# put together
+# tool meet fname
 $TOOL $FNAME
 
 exit 0
