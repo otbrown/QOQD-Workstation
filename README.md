@@ -21,5 +21,5 @@ It could just be that the workstation is at capacity -- use ```htop``` to see us
 
 If you've followed the above advice and think your job should be running, but it still isn't, then file an [issue](https://github.com/otbrown/QOQD-Workstation/issues), or drop me an e-mail!
 
- ### Something else is wrong!
- File an [issue](https://github.com/otbrown/QOQD-Workstation/issues), send me an e-mail, or just swing by my office!  
+### Something else is wrong!
+File an [issue](https://github.com/otbrown/QOQD-Workstation/issues), send me an e-mail, or just swing by my office!  
