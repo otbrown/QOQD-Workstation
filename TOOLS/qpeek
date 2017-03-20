@@ -76,6 +76,7 @@ elif [ $# -eq 1 ]; then
         _help
     elif [[ $1 =~ $JOB_REGEX ]]; then
         build_path $1
+        EXEC_HOST=$(qstat -n1 $1 | grep -owE [aeghrtu]\{4,5\}$)
     else
         echo "Invalid input. Please check usage with qpeek --help"
         exit -1
@@ -105,44 +106,48 @@ elif [ $# -eq 2 ]; then
     # check job ID
     if [[ $2 =~ $JOB_REGEX ]]; then
         build_path $2
+        EXEC_HOST=$(qstat -n1 $2 | grep -owE [aeghrtu]\{4,5\}$)
     else
         echo "Invalid job ID. See usage with qpeek --help"
         exit -1
     fi
 fi
 
-# get exec host
-EXEC_HOST=$(qstat -n1 531.hart | grep -owE [aeghrtu]\{4,5\}$)
+# check exec host has been assigned
+if [[ $EXEC_HOST == "" ]];  then
+    echo "Invalid job ID. See usage with qpeek --help"
+    exit -1
+fi
 
 # check against local hostname
-if [[ $(hostname) == $EXEC_HOST ]]; then
-  # final bit of error handling, check fname can be accessed
-  if [ ! -f $FNAME ]; then
-  	echo "Cannot resolve outfile, or it is not a file."
-  	exit -1
-  elif [ ! -r $FNAME ]; then
-  	echo "Outfile is not readable."
-  	exit -1
-  fi
+if [[ $(hostname) == ${EXEC_HOST}.${DOMAIN} ]]; then
+    # final bit of error handling, check fname can be accessed
+    if [ ! -f $FNAME ]; then
+  	   echo "Cannot resolve outfile, or it is not a file."
+  	   exit -1
+    elif [ ! -r $FNAME ]; then
+  	   echo "Outfile is not readable."
+  	   exit -1
+    fi
 
-  # tool meet fname
-  $TOOL $LINE_OPT $FNAME
+    # tool meet fname
+    $TOOL $LINE_OPT $FNAME
 else
-  ssh -T ${USER}@${EXEC_HOST}.${DOMAIN} <<ENDSSH
-  # final bit of error handling, check fname can be accessed
-  if [ ! -f $FNAME ]; then
-    ENDSSH
-  	echo "Cannot resolve outfile, or it is not a file."
-    exit -1
-  elif [ ! -r $FNAME ]; then
-    ENDSSH
-  	echo "Outfile is not readable."
-    exit -1
-  fi
+    ssh -T ${USER}@${EXEC_HOST}.${DOMAIN} <<ENDSSH
+    # final bit of error handling, check fname can be accessed
+    if [ ! -f $FNAME ]; then
+        ENDSSH
+      	echo "Cannot resolve outfile, or it is not a file."
+        exit -1
+    elif [ ! -r $FNAME ]; then
+        ENDSSH
+      	echo "Outfile is not readable."
+        exit -1
+    fi
 
-  # tool meet fname
-  $TOOL $LINE_OPT $FNAME
-  ENDSSH
+    # tool meet fname
+    $TOOL $LINE_OPT $FNAME
+    ENDSSH
 fi
 
 exit 0
