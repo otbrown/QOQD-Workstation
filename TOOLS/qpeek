@@ -136,18 +136,16 @@ else
     ssh -T ${USER}@${EXEC_HOST}.${DOMAIN} <<ENDSSH
     # final bit of error handling, check fname can be accessed
     if [ ! -f $FNAME ]; then
-        ENDSSH
       	echo "Cannot resolve outfile, or it is not a file."
         exit -1
     elif [ ! -r $FNAME ]; then
-        ENDSSH
       	echo "Outfile is not readable."
         exit -1
     fi
 
     # tool meet fname
     $TOOL $LINE_OPT $FNAME
-    ENDSSH
+ENDSSH
 fi
 
 exit 0
