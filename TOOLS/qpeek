@@ -72,7 +72,7 @@ get_num_lines () {
 }
 
 is_batch () {
-    if [[ $JOB_ID ~= $ISBATCH_REGEX ]]; then
+    if [[ $JOB_ID =~ $ISBATCH_REGEX ]]; then
         ISBATCH=0
     else
         ISBATCH=1
