@@ -41,11 +41,11 @@ declare -r DOMAIN=eps.hw.ac.uk
 declare -r EXT=OU
 declare -r VALID_JOB_REGEX='[0-9]+\[?[0-9]{1,3}\]?(.hart)?'
 declare -r JOB_NUM_REGEX='[0-9]+'
-declare -r ISBATCH_REGEX='[0-9]+\[[0-9]\{1,3\}\]\(.hart\)?'
+declare -r ISBATCH_REGEX='[0-9]+\[[0-9]{1,3}\]\(.hart\)?'
 declare -r BATCH_JOB_REGEX='[^[][0-9]+[^]]'
 declare -r BATCH_TASK_REGEX='\[[0-9]+\]'
 declare -r NUM_LINES_REGEX='-[ht][0-9]+'
-declare -r EXEC_HOST_REGEX='[aeghrtu]\{4,5\}$'
+declare -r EXEC_HOST_REGEX='[aeghrtu]{4,5}$'
 declare TOOL=tail
 declare EXEC_HOST=""
 declare LINE_OPT=""
@@ -60,7 +60,7 @@ _help () {
 }
 
 build_path () {
-    if [ $ISBATCH ]; then
+    if [[ $ISBATCH == 'true' ]]; then
         FNAME=${SPOOL}${JOB_NUM}-${TASK_NUM}.hart.${DOMAIN}.${EXT}
     else
         FNAME=${SPOOL}${JOB_NUM}.hart.${DOMAIN}.${EXT}
@@ -73,9 +73,9 @@ get_num_lines () {
 
 is_batch () {
     if [[ $JOB_ID =~ $ISBATCH_REGEX ]]; then
-        ISBATCH=0
+        ISBATCH='true'
     else
-        ISBATCH=1
+        ISBATCH='false'
     fi
 }
 
@@ -148,11 +148,11 @@ fi
 is_batch
 
 # get job number and (if batch job) task number
-if [ ISBATCH ]; then
-    JOB_NUM=$(grep -oE $BATCH_JOB_REGEX $JOB_ID)
-    TASK_NUM=$(grep -oE $BATCH_TASK_REGEX $JOB_ID | grep -oE [0-9]+)
+if [[ $ISBATCH == 'true' ]]; then
+    JOB_NUM=$(grep -oE $BATCH_JOB_REGEX <<< $JOB_ID)
+    TASK_NUM=$(grep -oE $BATCH_TASK_REGEX <<< $JOB_ID | grep -oE [0-9]+)
 else
-    JOB_NUM=$(grep -oE $JOB_NUM_REGEX $JOB_ID)
+    JOB_NUM=$(grep -oE $JOB_NUM_REGEX <<< $JOB_ID)
 fi
 
 # build fname
