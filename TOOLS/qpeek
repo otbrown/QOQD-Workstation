@@ -10,11 +10,12 @@
 # USAGE
 # qpeek -{c|h|t} job_ID
 #
-# You can find the job_ID for your job using qstat. It should be of the form
-# XXX.hart where XXX is the number assigned to your job. If you are using a
-# task array the form is XXX-YY.hart, where YY is the task number.
+# You can find the job_ID for your job using qstat. It may be of the form
+# XXX.hart, or just XXX where XXX is the number assigned to your job. If
+# you are using a task array the form is XXX[YY], where YY is the task
+# number.
 #
-# The tool option can be optionally omitted, in which case qpeek will use tail.
+# The tool can be optionally omitted, in which case qpeek will use tail.
 # You can optionally supply the number of lines to head and tail in format
 # -{h|t}zz, where zz is the number of lines
 #
@@ -41,8 +42,8 @@ declare -r DOMAIN=eps.hw.ac.uk
 declare -r EXT=OU
 declare -r VALID_JOB_REGEX='[0-9]+\[?[0-9]{1,3}\]?(.hart)?'
 declare -r JOB_NUM_REGEX='[0-9]+'
-declare -r ISBATCH_REGEX='[0-9]+\[[0-9]{1,3}\]\(.hart\)?'
-declare -r BATCH_JOB_REGEX='[^[][0-9]+[^]]'
+declare -r ISBATCH_REGEX='[0-9]+\[[0-9]{1,3}\](.hart)?'
+declare -r BATCH_JOB_REGEX='[^[][0-9]+'
 declare -r BATCH_TASK_REGEX='\[[0-9]+\]'
 declare -r NUM_LINES_REGEX='-[ht][0-9]+'
 declare -r EXEC_HOST_REGEX='[aeghrtu]{4,5}$'
@@ -85,15 +86,15 @@ get_exec () {
 
 # MAIN
 # handle input arguments
-if [ $# -gt 2 ]; then
+if [[ $# -gt 2 ]]; then
     # this is an erroneous call
     echo "Too many arguments! Please check usage with qpeek --help"
     exit -1
-elif [ $# -eq 0 ]; then
+elif [[ $# -eq 0 ]]; then
     # this is an erroneous call
     echo "No job ID provided. Please check usage with qpeek --help"
     exit -1
-elif [ $# -eq 1 ]; then
+elif [[ $# -eq 1 ]]; then
     # this is either a default call or a cry for help
     if [[ $1 == --help || $1 == -help ]]; then
         _help
@@ -161,10 +162,10 @@ build_path
 # check against local hostname
 if [[ $(hostname) == ${EXEC_HOST}.${DOMAIN} ]]; then
     # final bit of error handling, check fname can be accessed
-    if [ ! -f $FNAME ]; then
+    if [[ ! -f $FNAME ]]; then
   	   echo "Cannot resolve outfile, or it is not a file."
   	   exit -1
-    elif [ ! -r $FNAME ]; then
+    elif [[ ! -r $FNAME ]]; then
   	   echo "Outfile is not readable."
   	   exit -1
     fi
@@ -174,10 +175,10 @@ if [[ $(hostname) == ${EXEC_HOST}.${DOMAIN} ]]; then
 else
     ssh -T ${USER}@${EXEC_HOST}.${DOMAIN} <<ENDSSH
     # final bit of error handling, check fname can be accessed
-    if [ ! -f $FNAME ]; then
+    if [[ ! -f $FNAME ]]; then
       	echo "Cannot resolve outfile, or it is not a file."
         exit -1
-    elif [ ! -r $FNAME ]; then
+    elif [[ ! -r $FNAME ]]; then
       	echo "Outfile is not readable."
         exit -1
     fi
